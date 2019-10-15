@@ -386,6 +386,9 @@
     &[data-color="purple"]{
         @include set-background-color-button($brand-primary);
     }
+    &[data-color="lila"]{
+        @include set-background-color-button($background-card-c);
+    }
     &[data-color="azure"]{
         @include set-background-color-button($brand-info);
     }
