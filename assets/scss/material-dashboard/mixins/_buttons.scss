@@ -213,6 +213,9 @@
   &.btn-primary {
     @include bmd-raised-button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
   }
+  &.btn-lila {
+    @include bmd-raised-button-variant($lila, $lila, $lila);
+  }
   &.btn-secondary {
     @include bmd-raised-button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border-color);
   }

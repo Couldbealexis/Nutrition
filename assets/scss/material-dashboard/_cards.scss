@@ -212,6 +212,21 @@
       background: linear-gradient(60deg, $pink-400, $pink-600);
     }
 
+    .card-header-lila .card-icon,
+    .card-header-lila .card-text,
+    .card-header-lila:not(.card-header-icon):not(.card-header-text),
+    &.bg-lila,
+    &.card-rotate.bg-lila .front,
+    &.card-rotate.bg-lila .back{
+      background: linear-gradient(60deg, $background-card-c, $background-card-c);
+    }
+
+    .card-header-lila .card-icon,
+    .card-header-lila:not(.card-header-icon):not(.card-header-text),
+    .card-header-lila .card-text{
+        @include shadow-big-color($background-card-c);
+    }
+
     .card-header-primary .card-icon,
     .card-header-primary:not(.card-header-icon):not(.card-header-text),
     .card-header-primary .card-text{
