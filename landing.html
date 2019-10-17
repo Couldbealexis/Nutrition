@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/icon/logo_ico.ico">
+  <link rel="icon" type="image/png" href="./assets/img/icon/logo_ico.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Nutrition App
@@ -21,69 +21,42 @@
   <link href="./assets/demo/demo.css" rel="stylesheet" />
 </head>
 
-<body class="off-canvas-sidebar">
-  
-  <div class="wrapper wrapper-full-page">
-    <div class="page-header login-page header-filter" filter-color="black" style="background-image: url('./assets/img/New.png'); background-size: cover; background-position: center;">
-      <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-            <form class="form" method="" action="">
-              <div class="card card-login card-hidden" style="background-color: white;">
-                <div class="card-header card-header-lila text-center">
-                  <h4 class="card-title">Login</h4>
-                  <div class="social-line">
-                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                      <i class="fa fa-facebook-square"></i>
-                    </a>
-                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="card-body ">
-                  <p class="card-description text-center">Or Be Classical</p>
-                  <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">email</i>
-                        </span>
-                      </div>
-                      <input type="email" class="form-control" placeholder="Email...">
-                    </div>
-                  </span>
-                  <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">lock_outline</i>
-                        </span>
-                      </div>
-                      <input type="password" class="form-control" placeholder="Password...">
-                    </div>
-                  </span>
-                </div>
-                <div class="card-footer justify-content-center">
-                  <a href="./index.html" class="btn btn-lila btn-link btn-lg">Lets Go</a>
-                </div>
-              </div>
-            </form>
-          </div>
+<body class="off-canvas-sidebar landing-page sidebar-collapse">
+
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/New.png')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="title" style="color: white;">Alimentación Complementaria</h1>
+          <h4>Creciendo con amor</h4>
+          
+          <br>
+          <!-- <img src="./assets/img/icon/logo_cut.png" alt="AlimentacionComplementaria" width="300px" height="300px" style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          "> -->
         </div>
       </div>
-      <footer class="footer" style="position: fixed; bottom: 0;">
-        <div class="container">
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, coded with <i class="material-icons heart">favorite</i> by Alexis Gutierrez
-          </div>
-        </div>
-      </footer>
     </div>
+  </div>
+  <div class="main main-raised">
+    <div class="container">
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, coded with <i class="material-icons heart">favorite</i> by Alexis Gutierrez
+      </div>
+    </div>
+  </footer>
+  </div>
   </div>
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js"></script>
@@ -95,8 +68,8 @@
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="./assets/demo/demo.js"></script>
   <script>
-    $(document).ready(function() {
-      $().ready(function() {
+    $(document).ready(function () {
+      $().ready(function () {
         $sidebar = $('.sidebar');
 
         $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -116,7 +89,7 @@
 
         }
 
-        $('.fixed-plugin a').click(function(event) {
+        $('.fixed-plugin a').click(function (event) {
           // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
@@ -127,7 +100,7 @@
           }
         });
 
-        $('.fixed-plugin .active-color span').click(function() {
+        $('.fixed-plugin .active-color span').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).siblings().removeClass('active');
@@ -148,7 +121,7 @@
           }
         });
 
-        $('.fixed-plugin .background-color .badge').click(function() {
+        $('.fixed-plugin .background-color .badge').click(function () {
           $(this).siblings().removeClass('active');
           $(this).addClass('active');
 
@@ -159,7 +132,7 @@
           }
         });
 
-        $('.fixed-plugin .img-holder').click(function() {
+        $('.fixed-plugin .img-holder').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).parent('li').siblings().removeClass('active');
@@ -169,7 +142,7 @@
           var new_image = $(this).find("img").attr('src');
 
           if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-            $sidebar_img_container.fadeOut('fast', function() {
+            $sidebar_img_container.fadeOut('fast', function () {
               $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
               $sidebar_img_container.fadeIn('fast');
             });
@@ -178,7 +151,7 @@
           if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
             var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-            $full_page_background.fadeOut('fast', function() {
+            $full_page_background.fadeOut('fast', function () {
               $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
               $full_page_background.fadeIn('fast');
             });
@@ -197,7 +170,7 @@
           }
         });
 
-        $('.switch-sidebar-image input').change(function() {
+        $('.switch-sidebar-image input').change(function () {
           $full_page_background = $('.full-page-background');
 
           $input = $(this);
@@ -229,7 +202,7 @@
           }
         });
 
-        $('.switch-sidebar-mini input').change(function() {
+        $('.switch-sidebar-mini input').change(function () {
           $body = $('body');
 
           $input = $(this);
@@ -244,7 +217,7 @@
 
             $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-            setTimeout(function() {
+            setTimeout(function () {
               $('body').addClass('sidebar-mini');
 
               md.misc.sidebar_mini_active = true;
@@ -252,12 +225,12 @@
           }
 
           // we simulate the window Resize so the charts will get updated in realtime.
-          var simulateWindowResize = setInterval(function() {
+          var simulateWindowResize = setInterval(function () {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
           // we stop the simulation of Window Resize after the animations are completed
-          setTimeout(function() {
+          setTimeout(function () {
             clearInterval(simulateWindowResize);
           }, 1000);
 
@@ -266,9 +239,9 @@
     });
   </script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       md.checkFullPageBackgroundImage();
-      setTimeout(function() {
+      setTimeout(function () {
         // after 1000 ms we add the class animated to the login/register card
         $('.card').removeClass('card-hidden');
       }, 700);
