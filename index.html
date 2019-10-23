@@ -42,6 +42,11 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
+            <a href="#" class="nav-link" onclick="install()">
+              <i class="material-icons">cloud_download</i>Instalar app
+            </a>
+          </li>
+          <li class="dropdown nav-item">
             <a href="./login.html" class="nav-link">
               <i class="material-icons">lock_outline</i>Inicio de sesión
             </a>
@@ -227,6 +232,36 @@
   <script src="./assets/landing/material-kit.min.js?v=2.1.1" type="text/javascript"></script>
 
   <script>
+
+    let deferredPrompt = null;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+    });
+
+    async function install() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        console.log(deferredPrompt)
+        deferredPrompt.userChoice.then(function (choiceResult) {
+
+          if (choiceResult.outcome === 'accepted') {
+            console.log('Your PWA has been installed');
+          } else {
+            console.log('User chose to not install your PWA');
+          }
+
+          deferredPrompt = null;
+
+        });
+
+
+      }
+    }
+
     // This is the "Offline page" service worker
 
     // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
@@ -246,6 +281,12 @@
           });
       }
     }
+
+  </script>
+
+  <script>
+
+
 
   </script>
 
