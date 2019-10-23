@@ -1,0 +1,26 @@
+{
+    "dir": "ltr",
+    "lang": "es",
+    "name": "Alimentacion complementaria",
+    "scope": "/Nutrition/",
+    "display": "standalone",
+    "start_url": "https://couldbealexis.github.io/Nutrition/",
+    "short_name": "Alimentacion complementaria",
+    "theme_color": "#8186d5",
+    "description": "",
+    "orientation": "portrait",
+    "background_color": "#8186d5",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/./assets/img/icons/logo.ico",
+            "sizes": "76x76",
+            "type": "image/vnd.microsoft.icon"
+        },
+        {
+            "src": "/images/Nutrition/assets/img/icons/logo.ico",
+            "sizes": "256x256 128x128 64x64 48x48 32x32 16x16"
+        }
+    ]
+}
