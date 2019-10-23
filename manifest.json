@@ -9,12 +9,12 @@
     "start_url": "/index.html",
     "icons": [
         {
-            "src": "/assets/img/icons/logo.ico",
+            "src": "Nutrition/assets/img/icons/logo.ico",
             "sizes": "76x76",
             "type": "image/vnd.microsoft.icon"
         },
         {
-            "src": "/assets/img/icons/logo.ico",
+            "src": "Nutrition/assets/img/icons/logo.ico",
             "sizes": "256x256 128x128 64x64 48x48 32x32 16x16"
         }
     ]
