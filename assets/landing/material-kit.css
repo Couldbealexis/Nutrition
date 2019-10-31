@@ -385,7 +385,8 @@ template {
   }
   pre,
   blockquote {
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
+    border: 1px solid white;
     page-break-inside: avoid;
   }
   thead {
@@ -14914,7 +14915,8 @@ footer .pull-center {
 }
 
 .info p {
-  color: #999999;
+  /* color: #999999; */
+  color: white;
 }
 
 .info-horizontal .icon {
@@ -15085,7 +15087,8 @@ h2.title {
 .description,
 .card-description,
 .footer-big p {
-  color: #999;
+  /* color: #999; */
+  color: white;
 }
 
 .text-warning {
