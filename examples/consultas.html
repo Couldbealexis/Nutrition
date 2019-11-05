@@ -54,13 +54,13 @@
               <p> Tienda </p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="./consultas.html">
               <i class="material-icons">eco</i>
               <p> Consultas </p>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="../examples/me.html">
               <i class="material-icons">account_circle</i>
               <p> Mi perfil </p>
@@ -86,7 +86,7 @@
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Mi Perfil</a>
+            <a class="navbar-brand" href="#pablo">Consultas</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -98,50 +98,100 @@
         </div>
       </nav>
       <!-- End Navbar -->
+
+
       <div class="content">
+
         <div class="content">
           <div class="container-fluid">
-            <div class="col-md-4">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="../assets/img/avatar.svg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <label class="col-sm-2 col-form-label" style="color: white;">Nombre(s)</label>
-                    <div class="col-sm-10">
-                      <div class="form-group">
-                        <input type="text" class="form-control" value="Alexis" disabled
-                          style="color: white !important;">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <label class="col-sm-2 col-form-label" style="color: white;">Apellidos</label>
-                    <div class="col-sm-10">
-                      <div class="form-group">
-                        <input type="text" class="form-control" value="Gutiérrez" disabled
-                          style="color: white !important;">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <label class="col-sm-2 col-form-label" style="color: white;">Email</label>
-                    <div class="col-sm-10">
-                      <div class="form-group">
-                        <input type="email" class="form-control" value="alexis.g@mail.com" disabled
-                          style="color: white !important;">
-                      </div>
-                    </div>
-                  </div>
 
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-success card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">eco</i>
+                    </div>
+                    <h4 class="card-title">Nutriólogas</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Direccion</th>
+                            <th class="text-right">Detalle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ana Rosa Aquino Limón</td>
+                            <td>Manuel Doblado #520 </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" class="btn btn-info"
+                                onclick="location.href='./consultas/1.html';">
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Sandra Bonaparte Luis</td>
+                            <td>Manuel Doblado #520 </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" class="btn btn-info"
+                                onclick="location.href='./consultas/2.html';">
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Nallely Lizeth Macías López</td>
+                            <td>Bonifacio Torres #39A </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" class="btn btn-info"
+                                onclick="location.href='./consultas/3.html';">
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Brigitte Lizbeth Torres Bustinzar</td>
+                            <td>Presa Oviachic #937</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" class="btn btn-info"
+                                onclick="location.href='./consultas/4.html';">
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Blanca Victoria Zúñiga Ruiz</td>
+                            <td>Libertad #1563 </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" class="btn btn-info"
+                                onclick="location.href='./consultas/5.html';">
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </button>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
+
           </div>
         </div>
+
         <footer class="footer">
           <div class="container-fluid">
             <div class="copyright float-right">
@@ -166,32 +216,17 @@
     <script src="../assets/js/plugins/sweetalert2.js"></script>
     <!-- Forms Validations Plugin -->
     <script src="../assets/js/plugins/jquery.validate.min.js"></script>
-    <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
-    <script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
-    <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-    <script src="../assets/js/plugins/bootstrap-selectpicker.js"></script>
-    <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-    <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+
     <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
     <script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
     <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
     <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
-    <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-    <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
-    <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
-    <script src="../assets/js/plugins/fullcalendar.min.js"></script>
-    <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
-    <script src="../assets/js/plugins/jquery-jvectormap.js"></script>
+
     <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <script src="../assets/js/plugins/nouislider.min.js"></script>
     <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-    <!-- Library for adding dinamically elements -->
-    <script src="../assets/js/plugins/arrive.min.js"></script>
-    <!-- Chartist JS -->
-    <script src="../assets/js/plugins/chartist.min.js"></script>
-    <!--  Notifications Plugin    -->
-    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/material-dashboard.js?v=2.1.0" type="text/javascript"></script>
     <!-- Material Dashboard DEMO methods, don't include it in your project! -->
@@ -368,6 +403,15 @@
         });
       });
     </script>
+    <!-- <script>
+      $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        md.initDashboardPageCharts();
+
+        md.initVectorMap();
+
+      });
+    </script> -->
 </body>
 
 </html>
